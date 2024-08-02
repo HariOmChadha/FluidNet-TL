@@ -1,0 +1,22 @@
+batch_size: 16
+dataset:
+  file: Datasets/condData/all_data_254.csv
+  num_workers: 0
+  splitting: random
+  test_size: 0.2
+  train_size: 0.30000000000000004
+  valid_size: 0.1
+epochs: 500
+eval_every_n_epochs: 1
+fine_tune_from: results/visc/ANN_scratch/Scratch_0.7
+fp16_precision: false
+gpu: cuda:0
+log_every_n_steps: 5
+lr: 0.006
+model_type: ANN
+name: Transfer_0.3
+patience: 150
+save_folder: results/cond/ANN_scratch/test_6
+task_name: cond
+warmup: 250
+weight_decay: 1e-6

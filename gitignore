@@ -1,0 +1,8 @@
+# cache
+.vscode
+__pycache__
+
+*.zip
+
+results/
+data/

@@ -1,0 +1,22 @@
+batch_size: 16
+dataset:
+  file: Datasets/condData/all_data_254.csv
+  num_workers: 0
+  splitting: random
+  test_size: 0.2
+  train_size: 0.1
+  valid_size: 0.1
+epochs: 500
+eval_every_n_epochs: 1
+fine_tune_from: None
+fp16_precision: false
+gpu: cuda:0
+log_every_n_steps: 5
+lr: 0.006
+model_type: ANN
+name: Scratch_0.1
+patience: 150
+save_folder: results/cond/ANN_scratch/test_3
+task_name: cond
+warmup: 250
+weight_decay: 1e-6

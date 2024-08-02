@@ -1,0 +1,8 @@
+pyYaml
+numpy
+rdkit
+matplotlib
+ipykernel
+pandas
+mordred
+

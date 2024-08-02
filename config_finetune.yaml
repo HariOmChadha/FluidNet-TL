@@ -1,0 +1,18 @@
+name: ''
+patience: 150
+batch_size: 16                  # batch size
+epochs: 500                     # total number of epochs
+fine_tune_from: None            # directory of pre-trained model
+lr: 0.006
+warmup: 250
+weight_decay: 1e-6              # weight decay of Adam
+gpu: cuda:0                     # training GPU
+task_name: visc                 # name of fine-tuning benchmark, inlcuding
+
+model_type: FFN                 
+
+dataset:
+  valid_size: 0.1               # ratio of validation data
+  test_size: 0.2                # ratio of test data
+  train_size: 0.7              # ratio of training data
+  splitting: random           # data splitting (i.e., random/stratified)
